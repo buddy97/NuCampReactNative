@@ -1,9 +1,12 @@
 import React, { Component } from "react";
 import Directory from "./Directory";
+import Home from "./Home";
+import CampsiteInfo from "./CampsiteInfo";
 import { View, Platform } from "react-native";
 import { createStackNavigator } from "react-navigation-stack";
 import { createAppContainer } from "react-navigation";
-import CampsiteInfo from "./CampsiteInfo";
+import { createDrawerNavigator } from "react-navigation-drawer";
+
 
     const DirectoryNavigator = createStackNavigator(
       {
@@ -24,7 +27,34 @@ import CampsiteInfo from "./CampsiteInfo";
       }
     );
 
-    const AppNavigator = createAppContainer(DirectoryNavigator);
+ const HomeNavigator = createStackNavigator(
+   {
+     Home: { screen: Home },
+   },
+   {
+     defaultNavigationOptions: {
+       headerStyle: {
+         backgroundColor: "#5637DD",
+       },
+       headerTintColor: "#fff",
+       headerTitleStyle: {
+         color: "#fff",
+       },
+     },
+   }
+ );
+
+ const MainNavigator = createDrawerNavigator(
+   {
+     Home: { screen: HomeNavigator },
+     Directory: { screen: DirectoryNavigator },
+   },
+   {
+     drawerBackgroundColor: "#CEC8FF",
+   }
+ );
+
+ const AppNavigator = createAppContainer(MainNavigator);
 
 
     
