@@ -25,16 +25,19 @@ const mapDispatchToProps = {
 
     const DirectoryNavigator = createStackNavigator(
       {
-        Directory: { screen: Directory, 
-                     navigationOptions: ({navigation}) => ({
-                       headerLeft: <Icon
-                            name='list'
-                            type='font-awesome'
-                            iconStyle={styles.stackIcon}
-                            onPress={() => navigation.toggleDrawer()}
-                            />
-                     })
-                    },
+        Directory: {
+          screen: Directory,
+          navigationOptions: ({ navigation }) => ({
+            headerLeft: (
+              <Icon
+                name="list"
+                type="font-awesome"
+                iconStyle={styles.stackIcon}
+                onPress={() => navigation.toggleDrawer()}
+              />
+            ),
+          }),
+        },
         CampsiteInfo: { screen: CampsiteInfo },
       },
       {
@@ -190,7 +193,7 @@ const CustomDrawerContentComponent = (props) => (
 );
 
 
-
+////Main NAV///
  const MainNavigator = createDrawerNavigator(
    {
      Home: {
@@ -265,7 +268,7 @@ const CustomDrawerContentComponent = (props) => (
  const AppNavigator = createAppContainer(MainNavigator);
 
 
-    
+///ClassComponent///   
 class Main extends Component {
   componentDidMount() {
     this.props.fetchCampsites();
@@ -288,7 +291,7 @@ class Main extends Component {
   }
 }
 
-
+/////Styling/////
 const styles = StyleSheet.create({
   container: {
     flex: 1,
