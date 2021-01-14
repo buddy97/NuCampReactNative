@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/buddyjuan/.nvm/versions/node/v14.9.0/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js add react-native-swipe-list-view
+  /Users/buddyjuan/.nvm/versions/node/v14.9.0/bin/node /usr/local/Cellar/yarn/1.22.10/libexec/bin/yarn.js add react-native-animatable
 
 PATH: 
   /Users/buddyjuan/.nvm/versions/node/v14.9.0/bin:/Users/buddyjuan/anaconda3/bin:/Users/buddyjuan/Library/Android/sdk/platform-tools:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin
@@ -14,7 +14,7 @@ Platform:
   darwin x64
 
 Trace: 
-  Error: 4615413248:error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac:../deps/openssl/openssl/ssl/record/ssl3_record.c:677:
+  Error: 4610592256:error:1408F119:SSL routines:ssl3_get_record:decryption failed or bad record mac:../deps/openssl/openssl/ssl/record/ssl3_record.c:677:
 
 npm manifest: 
   {
@@ -39,6 +39,7 @@ npm manifest:
       "react-native-reanimated": "~1.9.0",
       "react-native-safe-area-context": "~3.0.7",
       "react-native-screens": "~2.9.0",
+      "react-native-swipe-list-view": "^3.2.5",
       "react-native-web": "~0.13.12",
       "react-navigation": "4",
       "react-navigation-drawer": "^2.6.0",
@@ -4812,6 +4813,11 @@ Lockfile:
     version "2.6.0"
     resolved "https://registry.yarnpkg.com/react-native-status-bar-height/-/react-native-status-bar-height-2.6.0.tgz#b6afd25b6e3d533c43d0fcdcfd5cafd775592cea"
     integrity sha512-z3SGLF0mHT+OlJDq7B7h/jXPjWcdBT3V14Le5L2PjntjjWM3+EJzq2BcXDwV+v67KFNJic5pgA26cCmseYek6w==
+  
+  react-native-swipe-list-view@^3.2.5:
+    version "3.2.5"
+    resolved "https://registry.yarnpkg.com/react-native-swipe-list-view/-/react-native-swipe-list-view-3.2.5.tgz#e10297ae53c9df79a5ef93bd01f47c47ad5dc23b"
+    integrity sha512-WWXUO7rF4UD+Mu49ZKghK6wrcSREAHni6w5km5j4AqCJh8YypVvmfV2byVLTvWPzDosdxQmh/DXQHsKlnLR3uQ==
   
   react-native-web@~0.13.12:
     version "0.13.18"
